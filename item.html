@@ -14,14 +14,14 @@
 
    <header class="main-header">
       <nav class="main-navigation">
-         <a class="main-header-logo">
-            <img src="img/index-logo.png" alt="Логотип барбершопа " Бородинский"" width="368" height="153">
+         <a class="main-header-logo" href="index.html">
+            <img src="" alt="Логотип барбершопа «Бородинский»" width="" height="">
          </a>
          <ul class="site-navigation">
             <li><a href="info.html">Информация</a></li>
             <li><a href="news.html">Новости</a></li>
             <li><a href="price.html">Прайс-лист</a></li>
-            <li><a href="catalog.html">Магазин</a></li>
+            <li class="site-navigation-current"><a href="catalog.html">Магазин</a></li>
             <li><a href="contacts.html">Контакты</a></li>
          </ul>
          <ul class="user-navigation">
@@ -99,6 +99,31 @@
          <a h ref="https://htmlacademy.ru/" class="button">HTML Academy</a>
       </p>
    </footer>
+
+   <section class="modal modal-login">
+      <h2>Личный кабинет</h2>
+      <p>Введите свой логин и пароль</p>
+      <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+         <p>
+            <label for="user-login">Логин</label>
+            <input type="text" id="user-login" class="login-icon-user" name="login" placeholder="Логин"></p>
+         <p>
+            <label for="user-password">Пароль</label>
+            <input type="text" id="user-password" class="login-icon-password" name="password" placeholder="Пароль">
+         </p>
+         <p class="login-password-info">
+            <label class="login-checkbox">
+               <input type="checkbox" name="remember" class="visually-hidden">
+               <span class="checkbox-indicator"></span>
+               Запомните меня
+            </label>
+            <a href="#" class="restore">Я забыл пароль!</a>
+         </p>
+         <button class="button" type="submit">Войти</button>
+      </form>
+      <button class="modal-close" type="button">Закрыть</button>
+   </section>
+
 
 </body>
 
