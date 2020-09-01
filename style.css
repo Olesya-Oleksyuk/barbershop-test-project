@@ -17,6 +17,17 @@ body {
    background-repeat: no-repeat;
 }
 
+.visually-hidden {
+   position: absolute;
+   width: 1px;
+   height: 1px;
+   margin: -1px;
+   border: 0;
+   padding: 0;
+   clip: rect(0 0 0 0);
+   overflow: hidden;
+}
+
 /* Overrided body properties in shop.html */
 .inner-page {
    color: #000000;
@@ -348,6 +359,134 @@ product-info {
    line-height: 30px;
 }
 
-.product-info ul{
+.product-info ul {
    list-style: none;
+}
+
+/************************** Сетка */
+
+/* Общий класс: центровочный контейнер */
+.container {
+   width: 940px;
+   margin: 0 auto;
+   padding: 0 10px;
+}
+
+.main-header {
+   margin-bottom: 75px;
+}
+
+.main-navigation {
+   display: flex;
+   /* Поворачиваем main-axis, чтобы элементы распол вертикально */
+   flex-direction: column;
+   align-items: center;
+
+   /* Временно для сетки */
+   min-height: 285px;
+   background-color: transparent;
+}
+
+.main-header-logo {
+   order: 2;
+   width: 371px;
+   height: 155px;
+}
+
+.main-navigation-wrapper {
+   /* Обёртка-цветная тянется на всю ширину */
+   width: 100%;
+   margin-bottom: 60px;
+
+   background-color: #000000;
+}
+
+/* Делаем элемент внутри flex-элемента - flex-контейнером */
+.main-navigation-wrapper .container {
+   display: flex;
+   justify-content: space-between;
+}
+
+.site-navigation {
+   width: 620px;
+   margin: 0px;
+   padding: 0px;
+   list-style: none;
+
+   /* Временно для сетки */
+   min-height: 70px;
+}
+
+.user-navigation {
+   width: 140px;
+   margin: 0;
+   padding: 0;
+
+   list-style: none;
+}
+
+.feature-list {
+   display: flex;
+   justify-content: space-between;
+   margin: 0;
+   padding: 0;
+
+   list-style: n;
+}
+
+.feature-item {
+   width: 300px;
+}
+
+.features {
+   margin-bottom: 80px;
+}
+
+.index-columns {
+   display: flex;
+   justify-content: space-between;
+   padding: 50px 80px;
+   margin-bottom: 35px;
+}
+
+.news {
+   width: 380px;
+}
+
+.gallery {
+   width: 300px;
+}
+
+.contacts {
+   width: 380px;
+}
+
+.appointment {
+   width: 300px;
+}
+
+.main-footer {
+   margin-top: 65px;
+   padding: 60px 0;
+}
+
+.main-footer .container {
+   display: flex;
+}
+
+.footer-contacts {
+   width: 320px;
+   margin: 0;
+   margin-right: 80px;
+}
+
+.footer-social {
+   width: 145px;
+   /* Следующий после этого элемент прижимается вправо */
+   margin-right: auto;
+}
+
+.footer-copyright {
+   width: 150px;
+   margin: 0;
 }
